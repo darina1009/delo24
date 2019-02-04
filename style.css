@@ -195,9 +195,10 @@ dl {
   background-color: #fff;
 }
 
-img {
+.slider__item img {
   display: inline-block;
   height: auto;
+  width: 100%;
 
 }
 
@@ -272,6 +273,7 @@ img {
     flex: 0 0 150px;
     max-width: 150px;
     height: 200px;
+    
   }
 
   .slider__item_testimonial {
@@ -305,10 +307,10 @@ img {
 }
 
 /*heder*/
-header {
+.header {
   display: flex;
-  flex-direction: column;
-  width: 15%;
+  flex-direction: row;
+  width: 100%;
   margin: 15px 35px;
   float: left;
 }
@@ -316,6 +318,10 @@ header {
 /*лого*/
 
 /* main menu */
+.main-menu{
+  width: 20%
+}
+
 .item {
   list-style-type: none;
   line-height: 1.8;
@@ -328,6 +334,9 @@ header {
 
 
 /*Search*/
+.search{
+margin-left: 18%;
+}
 
 .header__search {
   display: none;
@@ -401,8 +410,8 @@ header {
 
   width: 640px;
   position: relative;
-  padding-top: 35%;
-  margin: 7% 8%;
+  padding-top: 30%;
+    margin: 2% 3%;
   /*box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.75);*/
 }
 
@@ -448,12 +457,12 @@ header {
   transform: scale(1);
 }
 
-.main_content {
+/*.main_content {
   width: 79%;
   float: left;
   display: flex;
   flex-direction: row;
-}
+}*/
 
 /*schedule*/
 
@@ -468,6 +477,7 @@ header {
 .index {
   color: #464242;
   font-family: OpenSans-Bold;
+  font-size: 114%;
 }
 
 .price {
@@ -536,7 +546,7 @@ header {
   height: 100px;
   border-radius: 100px;
   background-color: rgba(255, 255, 255, .0);
-  border: 1px solid #87CEFA;
+ /* border: 1px solid #87CEFA;*/
   margin: 0 auto;
   text-align: center;
 }
