@@ -181,3 +181,9 @@
       interval: 5000,
       pause: true
     }));
+
+    $(document).ready(function(){
+      $(".owl-carousel").owlCarousel();
+    });
+
+  
