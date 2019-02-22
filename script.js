@@ -181,3 +181,54 @@
       interval: 5000,
       pause: true
     }));
+
+    $('.lp-slider2').owlCarousel({
+			items:3,
+			nav: true,
+			navText:['<i class="fas fa-arrow-alt-circle-left"></i>','<i class="fas fa-arrow-alt-circle-right"></i>'], 
+    });
+    
+    $('.lp-mfp-inline').magnificPopup({
+      type: 'inline'  
+  });
+  /*$('.lp-slider2 a').magnificPopup({
+      type: 'image'  
+  });*/
+  $('.lp-gallery').each(function() { //Несколько галерей
+    $(this).magnificPopup({ 
+    type: 'image',
+    delegate: 'a',
+
+      gallery:{
+      enabled:true
+        },
+    callbacks: {
+  
+      buildControls: function() {
+    // re-appends controls inside the main container
+        this.contentContainer.append(this.arrowLeft.add(this.arrowRight));
+          }
+  
+          }
+    });	
+  });	
+
+  $('.lp-popup-btn').on('click',function(){
+    console.log($(this).index());
+$.magnificPopup.open({
+items:[ {
+src: 'page1.html',
+type: 'ajax'
+},{
+src: 'https://www.youtube.com/watch?v=neYjdM3D_S8',
+type: 'iframe'
+},{
+src: 'images/slideshow/slide3.jpg',
+type: 'image'
+}
+],  			
+gallery:{enabled:true}
+});
+});
+
+  

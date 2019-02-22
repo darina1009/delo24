@@ -5,10 +5,24 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>DELO 24</title>
-  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
   <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
   <link href="css/bootstrap-theme.css" rel="stylesheet" media="screen">
+  <link rel="stylesheet" href="css/magnific-popup.css">
+  <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+  <link rel="stylesheet" href="css/all.css">
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script src="owlcarousel/owl.carousel.min.js"></script>
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.min.js"></script>
+  <script src="js/jquery.magnific-popup.min.js"></script>
+  <script src="js/script.js"></script>
   <script src="script.js"></script>
+
 </head>
 
 <body>
@@ -36,13 +50,13 @@
       <a class="slider__control slider__control_next" href="#" role="button"></a>
     </div>
 
-    <div class="search">
+    <!--<div class="search">
       <form class="header__search index-page ng-untouched ng-pristine ng-valid" novalidate="">
         <input class="input header__search-input ng-untouched ng-pristine ng-valid" name="query" placeholder="Найдите курсы..."
           type="search" value="">
         <input class="header__search-submit" type="submit" value="">
       </form>
-    </div>
+    </div>-->
 
   </header>
   <div class="header">
@@ -50,7 +64,7 @@
     <nav class="main-menu">
       <div class="logo">
         <a href="/">
-          <img alt="DELO24" src="img/logo.png" width="90%">
+          <img alt="DELO24" src="img/log.png" width="90%">
         </a>
       </div>
       <ul class="main-menu__list">
@@ -61,13 +75,16 @@
           <a class="link" routerlinkactive="active" href="shop/index.html">Магазин курсов</a>
         </li>
         <li class="item">
-          <a class="link" routerlinkactive="active" href="#">Приемущества</a>
+          <a class="link" routerlinkactive="active" href="#about">Приемущества</a>
         </li>
         <li class="item">
-          <a class="link" routerlinkactive="active" href="#">Команда</a>
+          <a class="link" routerlinkactive="active" href="#team">Команда</a>
         </li>
         <li class="item">
-          <a class="link" routerlinkactive="active" href="#">Оборудование</a>
+          <a class="link" routerlinkactive="active" href="#reviews">Отзывы</a>
+        </li>
+        <li class="item">
+          <a class="link" routerlinkactive="active" href="#gallery">Фотогалерея</a>
         </li>
       </ul>
     </nav>
@@ -75,14 +92,48 @@
 
     <!--<div class="main_content">-->
     <div class="slid">
-      <input type="radio" name="slide_switch" id="id1" />
+        <div class="owl-carousel slider1">
+            <img src="img/massazh.png" alt="slide1">
+            <img src="img/trener.png" alt="slide2">
+            <img src="img/market.png" alt="slide3">
+            <img src="img/dizayn.png" alt="slide4">
+            <img src="img/program.png" alt="slide5">
+        </div>
+        <div class="owl-carousel slider2">
+            <div class="slide">
+               <div class="veil visible"></div>
+                <img src="img/massazh.png" width="100" />
+                <span class="sltxt">Курсы<br> массажа</span>
+            </div>
+            <div class="slide">
+               <div class="veil"></div>
+                <img src="img/trener.png" width="100" />
+                <span>Курсы<br> тренеров</span>
+            </div>
+            <div class="slide">
+               <div class="veil"></div>
+                <img src="img/market.png" width="100" />
+                <span>Курсы<br> маркетинга</span>
+            </div>
+            <div class="slide">
+               <div class="veil"></div>
+                <img src="img/dizayn.png" width="100" />
+                <span>Курсы<br> дизайна</span>
+            </div>
+            <div class="slide">
+               <div class="veil"></div>
+                <img src="img/program.png" width="100" />
+                <span>Курсы<br> FrontEnd </span>
+            </div>
+
+      <!-- <input type="radio" name="slide_switch" id="id1" />
       <label for="id1">
         <img src="img/massazh.png" width="100" />
         <span>Курсы<br> массажа</span>
       </label>
       <img src="img/massazh.png" width="100%" />
 
-      <!--Lets show the second image by default on page load-->
+      
       <input type="radio" name="slide_switch" id="id2" checked="checked" />
       <label for="id2">
         <img src="img/trener.png" width="100" />
@@ -109,25 +160,22 @@
         <img src="img/program.png" width="100" />
         <span>Курсы<br> FrontEnd </span>
       </label>
-      <img src="img/program.png" width="100%" />
+      <img src="img/program.png" width="100%" /> -->
     </div>
 
     <!-- We will use PrefixFree - a script that takes care of CSS3 vendor prefixes
 You can download it from http://leaverou.github.com/prefixfree/ -->
     <script src="http://thecodeplayer.com/uploads/js/prefixfree.js" type="text/javascript"></script>
-
-
-
-    <div class="index-page__programms">
-      <div class="block__title index">
-        <a class="link index" href="/shop/" routerlink="/shop">
+  </div>
+<div class="prog">
+  <div class="index-page__programms">
+        <a class="index" href="shop/index.html" routerlink="/shop">
           <div class="text index">Ближайшие программы</div>
-          <div class="icon index"></div>
         </a>
       </div>
 
       <div class="programs__list">
-        <a class="programs__list-item" href="https://molodost.bz/coaching_june/">
+        <a class="programs__list-item" href="#">
           <div class="date">
             <div class="day">02</div>
             <div class="month">февраль</div>
@@ -137,8 +185,9 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
               <div class="title">Курсы фитнес-тренеров</div>
             </div>
             <div class="price">от 800 руб.</div>
-          </div>
-        </a><a class="programs__list-item" href="программирование">
+          </div></a>
+
+        <a class="programs__list-item" href="#">
           <div class="date">
             <div class="day">05</div>
             <div class="month">февраль</div>
@@ -149,7 +198,7 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
             </div>
             <div class="price">от 500 руб.</div>
           </div>
-        </a><a class="programs__list-item" href="веб-дизайн">
+        </a><a class="programs__list-item" href="#">
           <div class="date">
             <div class="day">30</div>
             <div class="month">март</div>
@@ -164,40 +213,30 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
       </div>
     </div>
   </div>
-  </div>
 
   <div class="about">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
           <div class="about-headr">
-            Приемущества
+           <p><a name="about">ПРИЕМУЩЕСТВА</a></p> 
           </div>
-        </div>
-      </div>
-      <div class="col-md-4">
+<div class="about-column">
         <div class="about-body-colmn1">
           <div class="circle">
             <img src="img/icons/obuc_prof.png" width="100" height="100" style="margin-top:22px">
           </div>
           <div class="about-body-text">
             <p>Обучение с профессионалами<br>в короткое время</p>
-
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
+
         <div class="about-body-colmn1">
           <div class="circle">
             <img src="img/icons/ind_obus.png" width="100" height="100" style="margin-top:22px">
           </div>
           <div class="about-body-text">
             <p>Много индивидуальных занятий</p>
-
           </div>
         </div>
-      </div>
-      <div class="col-md-4">
+      
         <div class="about-body-colmn1">
           <div class="circle">
             <img src="img/icons/obuc_mark.png" width="100" height="100" style="margin-top:22px">
@@ -207,126 +246,26 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
           </div>
         </div>
       </div>
-
     </div>
-  </div>
+
   <div class="Reviews">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6 col-md-offset-4">
           <div class="Reviews-text">
-            <h2>ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+            <p><a name="reviews">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</a></p>
           </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="client">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          <div class="client-foto">
-          </div>
-          <div class="review">
-            <div class="review-text">
-              Приобрела аналог аромата<a href=""> "Dolce &Gabbana Light Blue"</a>
-              и могу спокойно заявить, что ароматы совпадают на 99%(1%-это
-              отличие флаконов). Аромат очень стойкий и мне подходит)
-            </div>
-            <div class="review-name">
-              <a href="https://vk.com/id175170493" style="color:#20f;">
-                <strong>Каролина Светикова</strong>
-              </a>
-            </div>
-            <div class="review-descr">
-              <strong>Продавец-консультант HITCH, Минск</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="client-foto">
-          </div>
-          <div class="review">
-            <div class="review-text">
-              Приобрела аналог аромата<a href=""> "Dolce &Gabbana Light Blue"</a>
-              и могу спокойно заявить, что ароматы совпадают на 99%(1%-это
-              отличие флаконов). Аромат очень стойкий и мне подходит)
-            </div>
-            <div class="review-name">
-              <a href="https://vk.com/id175170493" style="color:#20f;">
-                <strong>Каролина Светикова</strong>
-              </a>
-            </div>
-            <div class="review-descr">
-              <strong>Продавец-консультант HITCH, Минск</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="client-foto">
-          </div>
-          <div class="review">
-            <div class="review-text">
-              Приобрела аналог аромата<a href=""> "Dolce &Gabbana Light Blue"</a>
-              и могу спокойно заявить, что ароматы совпадают на 99%(1%-это
-              отличие флаконов). Аромат очень стойкий и мне подходит)
-            </div>
-            <div class="review-name">
-              <a href="https://vk.com/id175170493" style="color:#20f;">
-                <strong>Каролина Светикова</strong>
-              </a>
-            </div>
-            <div class="review-descr">
-              <strong>Продавец-консультант HITCH, Минск</strong>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-md-6">
-          <div class="client-foto">
-          </div>
-          <div class="review">
-            <div class="review-text">
-              Приобрела аналог аромата<a href=""> "Dolce &Gabbana Light Blue"</a>
-              и могу спокойно заявить, что ароматы совпадают на 99%(1%-это
-              отличие флаконов). Аромат очень стойкий и мне подходит)
-            </div>
-            <div class="review-name">
-              <a href="https://vk.com/id175170493" style="color:#20f;">
-                <strong>Каролина Светикова</strong>
-              </a>
-            </div>
-            <div class="review-descr">
-              <strong>Продавец-консультант HITCH, Минск</strong>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
   </div>
 
   <div class="step">
-
-    <div class="container">
-      <div class="row">
-        <div class="col-md-4 col-md-offset-4">
           <div class="about-headr">
-            Какие дальше будут шаги?
+            КАКИЕ ДАЛЬШЕ БУДУТ ШАГИ?
           </div>
-        </div>
-      </div>
-    </div>
     <div class="steps">
+      
       <div class="about-body-colmn1">
         <div class="circle">
           <img src="img/icons/zayavk.png" width="100" height="100" style="margin-top:22px">
         </div>
         <div class="about-body-text">
           <p>Оставить заявку</p>
-
         </div>
       </div>
 
@@ -336,10 +275,8 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
         </div>
         <div class="about-body-text">
           <p>Пройти<br> собеседование</p>
-
         </div>
       </div>
-
 
       <div class="about-body-colmn1">
         <div class="circle" id="pc">
@@ -350,7 +287,6 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
         </div>
       </div>
 
-
       <div class="about-body-colmn1">
         <div class="circle" id="pc">
           <img src="img/icons/proyti_kursy.png" width="100" height="100" style="margin-top:22px">
@@ -359,7 +295,6 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
           <p>Пройти курсы</p>
         </div>
       </div>
-
 
       <div class="about-body-colmn1">
         <div class="circle" id="ic">
@@ -370,9 +305,9 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
         </div>
       </div>
     </div>
-
+  
   </div>
-  </div>
+  
   <div class="consul">
     <div class="forms">
       <div class="consul-text">
@@ -380,9 +315,10 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
       </div>
       <form>
         <input type="text" name="введите ваше имя" placeholder="Ваше имя" />
-        <input placeholder="Ваш телефон*" />
+        <input type="tel" placeholder="Ваш телефон*" />
         <input type="e-mail" name="e-mail" placeholder="Ваш e-mail*" /><br /><br />
       </form>
+      <div class="cns">
       <div class="consul-button">
         Получить консультацию
       </div>
@@ -395,30 +331,45 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
         </div>
       </div>
     </div>
+    </div>
   </div>
 
   <div class="gallery">
     <div class="gallery-text">
-      Фотогалерея
+     <p><a name="gallery">ФОТОГАЛЕРЕЯ</a></p>
     </div>
     <div class="photo_gallery">
-    <div class="mini_photo">
-      <img src="img/trener.png" width="70%" height="100%">
-    </div>
-    <div class="mini_photo">
-        <img src="img/market.png" width="70%" height="100%">
-    </div>
-    <div class="mini_photo">
-        <img src="img/dizayn.png" width="70%" height="100%">
-    </div>
-    <div class="mini_photo">
-        <img src="img/program.png" width="70%" height="100%">
-    </div>
-    <div class="mini_photo">
-        <img src="img/massazh.png" width="70%" height="100%">
+      <div class="owl-carousel lp-slider2 lp-gallery">
+        
+        <div class="popup-slider1 ps">
+          <img src="img/icons/dgalereya.png" alt="slide1" class="imag" >
+          <p>КУРСЫ ДИЗАЙНА</p>
+        </div> 
+
+        <div class="popup-slider2 ps"> 
+          <img src="img/icons/mgalerei.png" alt="slide2" class="imag">
+          <p>КУРСЫ МАССАЖА</p>
+        </div>
+        <div class="popup-slider3 ps"> 
+          <img src="img/icons/mgalereya.png" alt="slide3" class="imag">
+          <p>КУРСЫ МАРКЕТИНГА</p>
+        </div>
+        <div class="popup-slider4 ps">  
+          <img src="img/icons/pgalereya.png" alt="slide4" class="imag">
+          <p>КУПСЫ FRONTEND</p>
+        </div>
+        <div class="popup-slider5 ps"> 
+          <img src="img/icons/tgalereya.png" alt="slide5" class="imag">
+          <p>КУРСЫ ТРЕНЕРОВ</p>
+        </div>
+        </div>
     </div>
   </div>
-  </div>
+    <div class="team">
+      <h2><a name="team">НАША КОМАНДА</a></h2>
+      <img src="img/komand.png" alt="slide1">
+    </div>
+      
 
 
 
@@ -426,36 +377,37 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
 
 
   <footer>
-    <div class="footer__content">
-      <div class="footer__main-block">
-        <div class="footer__text">
+
+  
+        <section class="footer__text">
           ©&nbsp;2014-2018 Delo24. <br>
           Адрес:г. Минск, ул. Мележа,<br>
           дом &nbsp;5, корп 1, офис 502
-        </div>
+        </section>
 
-        <div class="footer__phones">
-          <div class="footer__phones-item without-plus">
-            <a class="link" href="tel:+375291866880">+375 (29) 1866880</a><br>
-            <a class="link" href="tel:+375291960926">+375 (29) 1960926</a><br>
-            <a class="link" href="tel:+375445102384">+375 (44) 5102384</a><br>
 
-          </div>
-          <a class="footer__phones-button" href="">Заказать звонок</a>
-        </div>
         <section class="footer__social">
           <h3 class="footer__social-title">Присоединяйтесь и читайте нас в социальных сетях</h3>
 
           <nav class="footer__social-navigation">
 
             <a class="footer__social-item vk" href="https://vk.com/club161625636" rel="nofollow" target="_blank"></a>
-            <a class="footer__social-item in" href="https://instagram.com/kursdelo24?utm_source=ig_profile_share&igshid=gaebyxp5ukd9"
-              rel="nofollow" target="_blank"></a>
-
+            <a class="footer__social-item in" href="https://instagram.com/kursdelo24?utm_source=ig_profile_share&igshid=gaebyxp5ukd9"rel="nofollow" target="_blank"></a>
+              <a class="footer__social-item yt" href="https://www.youtube.com/channel/UCTZ636ERD7ETvUBGGyYpnbA?view_as=subscriber" rel="nofollow" target="_blank"></a>
         </section>
-      </div>
 
-    </div>
+        <section class="footer__phones">
+            <div class="footer__phones-item without-plus">
+              <a class="link" href="tel:+375291866880">+375 (29) 1866880</a><br>
+              <a class="link" href="tel:+375291960926">+375 (29) 1960926</a><br>
+              <a class="link" href="tel:+375445102384">+375 (44) 5102384</a><br>
+  
+            </div>
+            <a class="footer__phones-button" href="">Заказать звонок</a>
+          </section>
+
+
+
   </footer>
 
 
@@ -466,10 +418,7 @@ You can download it from http://leaverou.github.com/prefixfree/ -->
 
 
 
-  <script src="script.js"></script>
 
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
 </body>
 
 </html>
