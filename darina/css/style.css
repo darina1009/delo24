@@ -1,0 +1,102 @@
+header{
+	position: fixed;
+	left:0;
+	top: 0;
+	background: rgba(0, 0, 0, 0.3);
+    color: chartreuse;
+    text-align: center;
+	width: 100%;
+	z-index: 99999;	
+}
+#slideshow{
+    margin-top: 50px;
+}
+.container{
+    width: 100%;
+}
+.lp-content{
+	min-height: 500px;
+	border: 1px solid red;
+    width: 100%;
+	/*padding: 100px 0;*/
+}
+
+footer{
+	background: #03a9f4;
+	padding: 20px;
+	color:#fff;
+	text-align: center;
+}
+footer p{
+	margin-bottom: 0;
+}
+/*Слайд-шоу*/
+#slideshow .lp-content{
+	padding: 0px;
+    width: 100%;
+}
+.owl-dots{
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding-bottom:20px;
+	transition: background-color .25s;
+	
+}
+.owl-dots button.owl-dot{
+	display: inline-block;
+	padding: 0 10px !important;
+	opacity: .75;
+}
+.owl-dots button.owl-dot:focus{
+	outline: none;
+}
+.owl-dots button.owl-dot span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: #fff;
+	border-radius: 20%;
+}
+.owl-dots button.owl-dot.active span{
+	background:#03a9f4;
+}
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next{
+	position: absolute;
+	top:50%;
+	margin-top: -20px;
+	width: 40px;
+	height: 40px;
+	background: #fff;
+	border-radius: 100%;
+	opacity: 0.75;
+	text-align: center;
+	transition: opacity .25s;
+}
+.owl-carousel .owl-nav button.owl-prev{
+	left: 25px;
+}
+.owl-carousel .owl-nav button.owl-next{
+	right: 25px;
+}
+.owl-carousel .owl-nav button.owl-prev:focus,
+.owl-carousel .owl-nav button.owl-next:focus{
+	outline: none;
+}
+.owl-carousel .owl-nav button.owl-prev:hover,
+.owl-carousel .owl-nav button.owl-next:hover{
+	opacity: .8;
+	background-color: #03f40c;
+
+}
+
+.owl-carousel .owl-nav button.owl-prev i,
+.owl-carousel .owl-nav button.owl-next i{
+	color:#03a9f4;
+	font-size:35px;
+	line-height:40px;
+}
+
