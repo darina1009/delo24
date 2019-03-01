@@ -15,6 +15,11 @@
   src: url(font/calibril.ttf);
 
 }
+
+html{
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -25,6 +30,7 @@ body {
   margin-left: auto;
   margin-right: auto; 
   width: 99%;
+  
   }
 
 a {
@@ -321,6 +327,8 @@ dl {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+
+ 
 }
 
 /*лого*/
@@ -340,7 +348,15 @@ dl {
   color: #464242;
   text-decoration: none;
 }
-
+.more_div {
+  margin-top: 9px;
+  margin-right: 110px;
+  padding-top: 9px;
+  border-top: 1px solid #dfe2e8;}
+.t-item{
+  list-style-type: none;
+  color: #b1b4bb;
+}
 
 /*Search*/
 .search {
@@ -490,8 +506,9 @@ dl {
 
 .index {
   color: #464242;
-  font-family: OpenSans-Bold;
-  font-size: 114%;
+  font-family: calibril;
+  font-size: 130%;
+  font-weight: 900;
   
 }
 
@@ -582,7 +599,7 @@ dl {
 .about-body-text {
   color: #2c2c2c;
   text-align: center;
-  margin-left: 10%;
+  
 }
 
 .about-body-text p {
@@ -666,12 +683,12 @@ form input{
 
 .consul-button {
   width: 25%;
-  font-size: 25px;
+  font-size: 180%;
   background-color: #ff1616;
   color: white;
   text-align: center;
   padding-top: 0.2%;
-  height: 40px;
+ 
   
   border-radius: 10px 10px;
 }
@@ -736,7 +753,7 @@ form input{
   color: #2c2c2c
 }
 
-.team h2 {
+.team p {
   text-align: center;
   font-size: 40px;
   font-family: OpenSans-Bold;
@@ -745,8 +762,13 @@ form input{
 }
 
 .team img{
-  width: 1340px;
+  width: 90%;
 }
+.smooth{width: 6%;
+  transform: rotate(-90deg);
+scroll-behavior: smooth;}
+
+/* footer */
 
 footer {
 background: #f4f4f4;
@@ -1075,7 +1097,7 @@ align-items: baseline;
 	background:#03a9f4;
 }
 /*шарики*/
-.owl-carousel .owl-nav button.owl-prev,
+/* .owl-carousel .owl-nav button.owl-prev,
 .owl-carousel .owl-nav button.owl-next{
 	position: absolute;
 	top:50%;
@@ -1103,14 +1125,14 @@ align-items: baseline;
 	opacity: .8;
 	background-color: rgb(34, 230, 236);
 
-}
+} */
 
-.owl-carousel .owl-nav button.owl-prev i,
+/* .owl-carousel .owl-nav button.owl-prev i,
 .owl-carousel .owl-nav button.owl-next i{
 	color:#03a9f4;
 	font-size:35px;
 	line-height:40px;
-}
+} */
 .slide{
     margin: 2px;
     text-align: center;

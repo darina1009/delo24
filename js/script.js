@@ -4,22 +4,23 @@ $(function(){
           
         $('.slider1').owlCarousel({
 			items:1,
-			nav: true,
-			navText:['<i class="fas fa-arrow-alt-circle-left"></i>','<i class="fas fa-arrow-alt-circle-right"></i>'], responsive:{
+			// nav: true,
+			// navText:['<i class="fas fa-arrow-alt-circle-left"></i>','<i class="fas fa-arrow-alt-circle-right"></i>'],
+			 responsive:{
 				0:{
 					items:1,
-					nav:false,
+					// nav:false,
 					dots:false
 					
 				}, 
 				600:{
 					items:1,
-					nav:true,
+					// nav:true,
 					dots:true
 				},
 				900:{
 					items:1,
-					nav:true,
+					// nav:true,
 					dots:true
 				}
 			}
