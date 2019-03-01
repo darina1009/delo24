@@ -377,7 +377,7 @@ box-shadow: 0 0 2px rgba(0, 0, 0, .5);
 .catheaders {
     color: #fff;
     font-family: calibril, sans-serif;
-    font-size: 24px;
+    font-size: 120%;
     font-weight: 400;
     text-align: center;
     position: relative;

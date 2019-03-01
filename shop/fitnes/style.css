@@ -341,7 +341,7 @@ dl {
 .content{
     display: flex;
     flex-direction: column;
-    margin-top: 5%;
+ 
     margin-left: 3%; 
 }
 
@@ -362,21 +362,21 @@ dl {
 
 .box-note{
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
     align-content: space-between;
-    width: 100%;
+    width: 99%;
 
 }
 
 .first_inf{
-    width: 150%;
+    width: 50%;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
    
 }
 
 .two-third{
-    width: 40%;
+    width: 60%;
   
     border: 5px solid rgba(178, 34, 0, .77);
     display: flex;
@@ -400,6 +400,7 @@ dl {
 
 .second_inf{
     margin-top: 5%; 
+    width: 50%;
 }
 .second_inf h2{
     padding-bottom: 2%;
@@ -407,7 +408,7 @@ dl {
 .second_inf ul{
     padding: 0 2%;
 }
-.second_inf li{
+.first_inf li{
     list-style-type: none;
     font-size: 80%;
 }
