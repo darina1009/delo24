@@ -746,6 +746,9 @@ form input{
 
 .team{
   margin-top: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .team a{
