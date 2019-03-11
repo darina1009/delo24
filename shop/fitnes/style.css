@@ -324,24 +324,11 @@ dl {
     width: 100%;
     margin: 15px 35px;
   }
-  .main-menu {
-    width: 20%
-  }
-  
-  .item {
-    list-style-type: none;
-    line-height: 1.8;
-    font-family: OpenSans-Bold;
-  }
-  
-  .item a {
-    color: #464242;
-  }
+ 
   
 .content{
     display: flex;
     flex-direction: column;
- 
     margin-left: 3%; 
 }
 
@@ -369,48 +356,71 @@ dl {
 }
 
 .first_inf{
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
-   
+    border-right: 2px solid rgba(2, 2, 2, 0.58);
 }
 
 .two-third{
-    width: 60%;
-  
-    border: 5px solid rgba(178, 34, 0, .77);
+    
+    border-bottom: 2px solid rgba(2, 2, 2, 0.58);
     display: flex;
     flex-direction: column;
     align-content: space-between;
     justify-content: space-around;
 }
 .two-thinrd strong {
+  font-family: calibril;
     margin-left: 2% !important;
     float: left;
     margin-left: 2%;
 }
 
-.two-thinrd span{
-    float: left;
-}
+
 
 .inf{
+  font-family: calibril;
+    font-size: 150%;
     margin-left: 2% !important;
+    display: flex;
+    align-items: center;
 }
+.inf img{
+  margin: 20px;
+}
+
+/* .inf p span{
+  display: none;
+}
+
+p :hover span{
+display: block;
+} */
+
+.three-third{
+margin-top: 5%;}
+
+.three-third h1{
+  font-family: calibril;
+}
+
+.three-third h2{
+  font-family: calibril;
+}
+
 
 .second_inf{
     margin-top: 5%; 
     width: 50%;
 }
-.second_inf h2{
-    padding-bottom: 2%;
-}
-.second_inf ul{
+
+.three-third ul{
     padding: 0 2%;
 }
-.first_inf li{
+.three-third li{
     list-style-type: none;
-    font-size: 80%;
+    font-family: calibril;
 }
 
 

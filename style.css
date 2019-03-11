@@ -1,19 +1,21 @@
 @font-face {
   font-family: OpenSans-Bold;
   src: url(font/Open_Sans/OpenSans-Bold.ttf);
-
 }
 
 @font-face {
   font-family: OpenSans-ExtraBold;
-  src: url(font/Open_Sans/OpenSans-ExtraBold.ttff);
+  src: url(font/Open_Sans/OpenSans-ExtraBold.ttf);
+}
 
+@font-face {
+  font-family: OpenSans-Regular;
+  src: url(font/Open_Sans/OpenSans-Regular.ttf);
 }
 
 @font-face {
   font-family: calibril;
   src: url(font/calibril.ttf);
-
 }
 
 html{
@@ -30,7 +32,7 @@ body {
   margin-left: auto;
   margin-right: auto; 
   width: 99%;
-  
+  font-family: OpenSans-Regular;
   }
 
 a {
@@ -273,9 +275,9 @@ dl {
 }
 
 @media (min-width: 576px) {
-  .slider__item {
+  /* .slider__item {
     height: 70px;
-  }
+  } */
 
   .slider__item_inner {
     flex-direction: row;
@@ -327,23 +329,83 @@ dl {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-
- 
 }
 
-/*лого*/
+@media (max-width:768px){
+  .header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.main-menu {
+  width: 100% !important;
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+ align-items: center;
+}
+.main-menu__list {
+  list-style: none; /*убираем маркеры списка*/
+  margin: 0; /*убираем верхнее и нижнее поле, равное 1em*/
+  padding-left: 0; /*убираем левый отступ, равный 40px*/
+}
+.link {text-decoration: none;}
+
+.item{display: inline;
+  padding: 1%;
+}
+.logo img{width: 90% !important}
+.logo{ width: 14%}
+
+.more_div {
+  margin: 0 !important;
+}
+.t-item{
+  display: none;
+}
+.slid{
+  width: 75% !important;
+}
+
+.slide{
+  display: none;
+}
+
+.owl-carousel{
+  display: none;
+  
+}
+.index {
+  font-size: 100% !important;
+  font-weight: 900;
+  text-align: center;}
+
+.about-body-text p {
+  font-size: 100% !important;
+}
+
+.btn {
+  width: 40% !important;
+}
+
+
+ /* footer */
+ .footer{
+ justify-content: space-between;}
+ .footer__text {
+  font-size: 70% !important;
+ }
+}
 
 /* main menu */
-.main-menu {
+.main-menu{
   width: 20%
 }
-
 .item {
   list-style-type: none;
   line-height: 1.8;
   font-family: OpenSans-Bold;
 }
-
 .item a {
   color: #464242;
   text-decoration: none;
@@ -352,76 +414,17 @@ dl {
   margin-top: 9px;
   margin-right: 110px;
   padding-top: 9px;
-  border-top: 1px solid #dfe2e8;}
+  border-top: 1px solid #dfe2e8;
+}
 .t-item{
   list-style-type: none;
   color: #b1b4bb;
 }
 
-/*Search*/
-.search {
-  margin-left: 18%;
-}
 
-.header__search {
-  display: none;
-  float: left;
-}
-
-.header__search {
-  display: -webkit-box;
-  display: -ms-flexbox;
+.main_content{
   display: flex;
-  width: 640px;
-  position: relative;
-  margin-top: 2%;
-  margin-left: 5%;
-}
-
-.header__search:hover .header__search-input {
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, .1);
-  box-shadow: 0 5px 10px rgba(0, 0, 0, .1)
-}
-
-.header__search.index-page {
-  width: 722px
-}
-
-.header__search.shop-page {
-  width: 550px
-}
-
-.header__search-input {
-  display: block;
-  font-family: Museo Sans\ 500, Helvetica Neue, Arial, sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 20px;
-  width: 100%;
-  height: 25px;
-  padding: 8px 35px 4px 10px;
-  -webkit-box-sizing: content-box;
-  box-sizing: content-box
-}
-
-.header__search-submit {
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  top: 57%;
-  right: 10px;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
-  border: 0;
-  cursor: pointer;
-  background: transparent url(img/icons/search.svg) 0 0 no-repeat;
-  background-size: auto 40px
-}
-
-.header__search-submit:hover {
-  background: transparent url(img/icons/search.svg) 0 -20px no-repeat;
-  background-size: auto 40px
+  flex-direction: row;
 }
 
 /*slider big*/
@@ -506,7 +509,7 @@ dl {
 
 .index {
   color: #464242;
-  font-family: calibril;
+  font-family: OpenSans-Bold;
   font-size: 130%;
   font-weight: 900;
   
@@ -672,6 +675,18 @@ form {
 
 form input{
   width: 202px;
+  height: 20px;
+}
+
+input[type='text'] { font-family: OpenSans-Regular; }
+
+.btn{
+width: 23%;
+color: white;
+background: red;
+font-family: calibril;
+font-weight: 900;
+font-size: 150%;
 }
 
 .cns{
@@ -693,6 +708,7 @@ form input{
   border-radius: 10px 10px;
 }
 
+
 .konfig {
   width: 250px;
   
@@ -706,6 +722,7 @@ form input{
   text-align: center;
   color: white;
   width: 100%;
+  font-size: 99%;
 }
 
 .img {
@@ -809,7 +826,10 @@ align-items: baseline;
   margin: 5px 0 15px 0
 }
 .footer__social-title{
-  color:  #7d7d7d;
+ 
+  color: #7d7d7d;
+  font-size: 110%;
+  font-weight: 600;
 }
 
 .footer__social {
