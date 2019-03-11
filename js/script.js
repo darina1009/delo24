@@ -46,7 +46,7 @@ $(function(){
 					
 				}, 
 				600:{
-					items:2,
+					items:3,
 					nav:false,
 					dots:false
 				},
