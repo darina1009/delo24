@@ -968,7 +968,7 @@ align-items: baseline;
 	display: inline-block;
 	width: 7px;
 	height: 7px;
-	background: #fff;
+	background: rgb(5, 5, 5);
 	border-radius:50%;
 }
 .owl-dots button.owl-dot.active span{
@@ -1043,6 +1043,9 @@ align-items: baseline;
   max-width: 500px;
   margin: 20px auto;
 }
+
+.pc{text-align: center;
+  width: 100%;}
 
 .ps{
   text-align: center;
@@ -1152,6 +1155,10 @@ align-items: baseline;
 .footer__text {
   font-size: 30% !important;
 }
+}
+
+.slide1{
+  display: none;
 }
 
 .slider4{
